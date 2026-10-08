@@ -1,0 +1,21 @@
+{
+  "name": "test-on-your-phone",
+  "version": "1.0.0",
+  "description": "A tiny sample project that shows how to open a locally running site on your phone over your home Wi-Fi.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "testing",
+    "mobile",
+    "localhost",
+    "qa",
+    "local-network"
+  ],
+  "author": "Arlinda Brahimi",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

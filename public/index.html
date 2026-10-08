@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Without this line, phones show a zoomed-out desktop page. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test on your phone</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="badge" id="badge">Checking…</p>
+      <h1>It works!</h1>
+      <p class="lead">If you are reading this on your phone, your phone is talking to your laptop over your Wi-Fi.</p>
+    </header>
+
+    <section class="card">
+      <h2>1. This device</h2>
+      <dl id="device"></dl>
+    </section>
+
+    <section class="card">
+      <h2>2. Talk to the laptop</h2>
+      <p>This button calls the server's API. Watch the laptop's terminal: it logs every call.</p>
+      <button id="ping" type="button">Call the API</button>
+      <pre id="result" aria-live="polite">No call yet.</pre>
+    </section>
+
+    <section class="card">
+      <h2>3. Try the phone things</h2>
+      <p>Tap each field. Does the right keyboard appear? Does it cover the field?</p>
+      <form id="form" novalidate>
+        <label>Email <input type="email" inputmode="email" autocomplete="email" placeholder="you@example.com"></label>
+        <label>Phone <input type="tel" inputmode="tel" autocomplete="tel" placeholder="+49 …"></label>
+        <label>Amount <input type="text" inputmode="decimal" placeholder="12.50"></label>
+        <label>Message <textarea rows="3" placeholder="Type something long…"></textarea></label>
+        <button type="submit">Submit (does nothing)</button>
+      </form>
+      <p class="hint">Also try: rotate the phone, pinch to zoom, and tap the small and large buttons below.</p>
+      <div class="targets">
+        <button type="button" class="tiny">Tiny 24px</button>
+        <button type="button">Good 48px</button>
+      </div>
+      <p id="tapped" class="hint" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
